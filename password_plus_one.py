@@ -12,10 +12,9 @@ def increment(s):
         s = s[:max(end-len(next), start)] + next + s[end:]
     return s
 
-print "[*]Description: This tool takes the output generated from oclHashcat and"
-print "increments the digits by one value."
+print "[*]Description: This tool takes the output generated from oclHashcat and increments the digits by one value."
 print "[*]To create the input file from cracking: oclHashcat64.exe -m 1000 hashes\hashes.lst --show > ocl_password_list.txt"
-print "[*]Example Format: test1:509019:aad3b435b51404eeaad3b435b51404ee:64f12cddaa88057e06a81b54e73b949b::::Password1"
+print "[*]Example Format: test1:509:aad3b435b51404eeaad3b435b51404ee:64f12cddaa88057e06a81b54e73b949b::::Password1"
 
 
 user_input = raw_input("Location of Password List in oclHashcat Format: ")
